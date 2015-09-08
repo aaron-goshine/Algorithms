@@ -1,10 +1,9 @@
-import java.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        int N = StdIn.readInt();
+        int n = StdIn.readInt();
         UF uf = new UF(n);
 
         while (!StdIn.isEmpty())
