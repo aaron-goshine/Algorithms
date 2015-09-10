@@ -1,0 +1,50 @@
+# The Analytic Machine
+
+    "As soon as an Analytic Engine exist, it will necessarily guide the
+    the future course of the science. Whenever any result is sought by its aid.
+    the question will arise--By what course of calculation can these results be arrived at
+    by the machine in the shortest time?"
+
+        -- Charles Babbage (1864)
+
+
+
+#Reasons to analyze algorithms
+
+    - Predict Performance.
+    - Compare algorithms.
+    - Provide guarantees.
+    - Understand theoretical basis.
+
+Primary practical reason: avoid performance bugs.
+
+
+Discrete Fourier transform.
+
+    - Break down waveform of N samples into periodic components.
+    - Applications: DVD, JPEG, MRI, astrophysis,...
+    - Brute force N^2 steps.
+    - FFT algorithm: N log N steps, enables new technology.
+
+N-body simulation
+
+Insight: [Donald Knuth 1970s] Use scientific method to unerstand performance.
+
+#Scientific method applied to analysis of algorithms
+
+A framework for predicting performance and comparing algorithns.
+
+Scientific method.
+
+    - Observe some feature of the natural world
+    - Hypothesize a model that is consistent with the observations.
+    - Predict events using the hypothesis.
+    - Verify the predictions by making further observations.
+    - Validate by repeating until the hypothesis and observation agree.
+
+Pricciples.
+
+    - Experiments must be reproducible.
+    - Hypotheses must be falsifiable.
+
+Feature of the natural world. Computure it self.
