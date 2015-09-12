@@ -8,7 +8,6 @@
         -- Charles Babbage (1864)
 
 
-
 #Reasons to analyze algorithms
 
     - Predict Performance.
@@ -16,25 +15,25 @@
     - Provide guarantees.
     - Understand theoretical basis.
 
-Primary practical reason: avoid performance bugs.
+#Primary practical reason: avoid performance bugs.
 
 
-Discrete Fourier transform.
+#Discrete Fourier transform.
 
     - Break down waveform of N samples into periodic components.
     - Applications: DVD, JPEG, MRI, astrophysis,...
     - Brute force N^2 steps.
     - FFT algorithm: N log N steps, enables new technology.
 
-N-body simulation
+#N-body simulation
 
-Insight: [Donald Knuth 1970s] Use scientific method to unerstand performance.
+#Insight: [Donald Knuth 1970s] Use scientific method to unerstand performance.
 
 #Scientific method applied to analysis of algorithms
 
-A framework for predicting performance and comparing algorithns.
+#A framework for predicting performance and comparing algorithns.
 
-Scientific method.
+#Scientific method.
 
     - Observe some feature of the natural world
     - Hypothesize a model that is consistent with the observations.
@@ -42,7 +41,7 @@ Scientific method.
     - Verify the predictions by making further observations.
     - Validate by repeating until the hypothesis and observation agree.
 
-Pricciples.
+#Pricciples.
 
     - Experiments must be reproducible.
     - Hypotheses must be falsifiable.
