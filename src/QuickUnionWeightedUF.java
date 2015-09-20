@@ -8,6 +8,8 @@ public class QuickUnionWeightedUF {
     public QuickUnionWeightedUF(int N) {
         id = new int[N];
         for (int i = 0; i < N; i++) id[i] = i;
+        sz = new int[N];
+        for (int i = 0; i < N; i++) sz[i] = 1;
     }
 
     private int root(int i) {
@@ -16,6 +18,10 @@ public class QuickUnionWeightedUF {
             i = id[i];
         }
         return i;
+    }
+
+    public int[] getId (){
+        return id;
     }
 
     public boolean connected(int p, int q) {

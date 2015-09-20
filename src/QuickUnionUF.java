@@ -3,10 +3,26 @@
  */
 public class QuickUnionUF {
     private int [] id;
+    private int count;
 
     public QuickUnionUF(int N){
+        count = N;
         id = new int [N];
         for (int i = 0; i < N; i++) id [i] = i;
+    }
+
+    public int[] getId (){
+        return id;
+    }
+
+    public void printId (){
+        for (int i = 0; i < id.length; i++)
+            System.out.print(id[i] + " ");
+        System.out.println( " ");
+    }
+
+    public int count (){
+        return count;
     }
 
     private int root(int i){

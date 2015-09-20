@@ -7,7 +7,13 @@ public class QuickFindUF {
     public QuickFindUF(int N) {
         id = new int[N];
         for (int i = 0; i < N; i++)
-            id[i] = 1;
+            id[i] = i;
+    }
+
+    public void printId (){
+        for (int i = 0; i < id.length; i++)
+            System.out.print(id[i] + " ");
+        System.out.println( " ");
     }
 
     public boolean connected(int p, int q) {
