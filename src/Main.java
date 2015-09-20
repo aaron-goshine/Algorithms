@@ -2,22 +2,15 @@
 public class Main {
 
     public static void main(String[] args) {
+        QuickFindUF  uf = new QuickFindUF (10);
+        int[][] union = {{0,4},{0,8},{7,3},{9,1},{5,6},{2,1},{6,2},{4,3},{4,2}};
 
-        int n = StdIn.readInt();
-        UF uf = new UF(n);
-
-        while (!StdIn.isEmpty())
-        {
-            int p = StdIn.readInt();
-            int q = StdIn.readInt();
-            if(!uf.connected(p,q)){
-                uf.union(p,q);
-                StdOut.println(p+ " "+ q);
-            }
+        for (int i = 0; i < union.length; i++){
+            int q = union[i][0];
+            int p = union[i][1];
+            uf.union(q,p);
+            uf.printId();
         }
-    }
 
-    public void helloWorld(){
-        System.out.println("Hello World!");
     }
 }
