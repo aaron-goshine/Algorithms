@@ -26,6 +26,6 @@ public class Evaluate {
             else vals.push(Double.parseDouble(s));
 
         }
-        StdOut.println(vals.pop());
+       System.out.println(vals.pop());
     }
 }
